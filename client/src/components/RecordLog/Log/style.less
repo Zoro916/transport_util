@@ -1,0 +1,70 @@
+.log-item-content {
+  strong {
+    display: inline-block;
+    margin: 0 2px;
+    color: #777;
+  }
+  color: orange;
+  font-size: 14px;
+  padding: 8px;
+}
+.time-line-item-group {
+  box-sizing: content-box;
+  padding: 20px;
+  background-color: #fff;
+  overflow: auto;
+}
+.time-line-item {
+    position: relative;
+    height: 60px;
+    .line {
+      position: absolute;
+      left: 4px;
+      top: -48px;
+      display: inline-block;
+      height: 50px;
+      width: 1px;
+      background-color: #ddd;
+    }
+    .circle {
+      position: absolute;
+      left: 0px;
+      top: 4px;
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: red;
+      border-radius: 4px;
+    }
+    .edit-button {
+      position: absolute;
+      bottom: 6px;
+      right: 0;
+      .edit {
+        display: inline-block;
+        width: 30px;
+        height: 16px;
+        background-image: url('../../../assets/edit.png');
+        background-size: 16px 16px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+      }
+      .delete {
+        display: inline-block;
+        width: 30px;
+        height: 16px;
+        background: url('../../../assets/dele.png');
+        background-size: 16px 16px;
+        background-position: 100% 0;
+        background-repeat: no-repeat;
+      }
+    }
+    p {
+      padding-left: 10px;
+      color: #777;
+      span {
+        color: orange;
+        padding: 0 6px;
+      }
+    }
+  }

@@ -1,0 +1,22 @@
+{
+  "name": "tr",
+  "version": "1.0.0",
+  "description": "基于Express+React+mongoDB构建",
+  "main": "app.js",
+  "scripts": {
+    "start": "supervisor --harmony app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zoro",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "connect-multiparty": "^2.1.0",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "moment": "^2.18.1",
+    "mongoose": "^5.0.7",
+    "mongoose-auto-increment": "^5.0.1",
+    "mongoose-id-autoinc": "^2013.7.14-4"
+  }
+}
