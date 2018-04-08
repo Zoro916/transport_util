@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'dva/router';
-import { Modal, Toast } from 'antd-mobile';
 import PropTypes from 'prop-types';
-import * as userServer from '../../services/user';
 import './style.less';
-
-const prompt = Modal.prompt;
 
 export default class IndexPage extends Component {
 

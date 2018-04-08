@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { List } from 'antd-mobile';
+import { connect } from 'dva';
 import { toNumber } from 'lodash';
 import thousandSymbol from '../../../utils/parseNumber';
-import { connect } from 'dva';
 import Tools from './tools';
 
 import './style.less';
@@ -24,13 +24,13 @@ class LogTool extends Component {
   render() {
     const count = this.props.log_list
       .map(item => item.record.length)
-      .reduce((prev, curr, idx, arr) => {
+      .reduce((prev, curr) => {
         return prev + curr;
       }, 0);
 
     const oil_total = this.props.log_list
       .map(item => toNumber(item.oil))
-      .reduce((prev, curr, idx, arr) => {
+      .reduce((prev, curr) => {
         return prev + curr;
       }, 0);
 

@@ -20,15 +20,6 @@ export default class RecordTimeItem extends Component {
           方向。运单编号
           <span>{transport_code}</span>
           。
-
-          {
-            this.props.editAble &&
-            <span className="edit-button">
-                <a className="edit" />
-                <a className="delete" />
-            </span>
-          }
-
         </p>
       </div>
     );
